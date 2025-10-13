@@ -70,6 +70,7 @@ endif()
 
 vcpkg_make_configure(
     SOURCE_PATH "${SOURCE_PATH}"
+    COPY_SOURCE
     DISABLE_CPPFLAGS # Build is not using CPP/CPPFLAGS
     DISABLE_MSVC_WRAPPERS
     LANGUAGES ASM C CXX # Requires NASM to compile
